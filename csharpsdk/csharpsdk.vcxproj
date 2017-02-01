@@ -124,10 +124,6 @@
     <ClCompile Include="ports.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mypcqqplg.vcxproj" />
-    <None Include="mypcqqplg.vcxproj.filters" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="说明.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
