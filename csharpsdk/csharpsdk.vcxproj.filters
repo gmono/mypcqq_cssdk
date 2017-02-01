@@ -24,6 +24,9 @@
     <ClInclude Include="mypcqq_dlport_raw.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="IPorts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
