@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="constc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IPorts.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mypcqq_dllport.h">
@@ -24,19 +30,22 @@
     <ClInclude Include="mypcqq_dlport_raw.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="IPorts.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllport_data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ports.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="说明.txt" />
   </ItemGroup>
 </Project>

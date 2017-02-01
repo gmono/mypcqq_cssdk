@@ -1,0 +1,5 @@
+d:\elanges\mypcqq\Plugin\testlib.dll
+d:\elanges\mypcqq\Plugin\testlib.pdb
+d:\document\visual studio 2015\Projects\csharpsdk\testlib\obj\Debug\testlib.csprojResolveAssemblyReference.cache
+d:\document\visual studio 2015\Projects\csharpsdk\testlib\obj\Debug\testlib.dll
+d:\document\visual studio 2015\Projects\csharpsdk\testlib\obj\Debug\testlib.pdb

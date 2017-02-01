@@ -1,11 +1,167 @@
 ImageRuntimeVersion: v4.0.30319
-Assembly csharpsdk, Version=0.0.*, Culture=固定语言(固定国家/地区): 
+Assembly csharpsdk, Version=1.0.*, Culture=固定语言(固定国家/地区): 
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
 Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Class TestClass: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class MPQCore.Consts: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 消息类型_未定义 IsConst : Public, Static, HasDefault
+    Int32 消息类型_好友 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_讨论组 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群临时会话 IsConst : Public, Static, HasDefault
+    Int32 消息类型_讨论组临时会话 IsConst : Public, Static, HasDefault
+    Int32 处理_忽略或取消 IsConst : Public, Static, HasDefault
+    Int32 处理_同意或确定 IsConst : Public, Static, HasDefault
+    Int32 处理_拒绝 IsConst : Public, Static, HasDefault
+    Int32 处理_单向同意 IsConst : Public, Static, HasDefault
+    Int32 消息类型_被单向添加好友 IsConst : Public, Static, HasDefault
+    Int32 消息类型_被请求添加好友 IsConst : Public, Static, HasDefault
+    Int32 消息类型_好友状态改变 IsConst : Public, Static, HasDefault
+    Int32 消息类型_被删除好友 IsConst : Public, Static, HasDefault
+    Int32 消息类型_好友签名变更 IsConst : Public, Static, HasDefault
+    Int32 消息类型_说说被评论 IsConst : Public, Static, HasDefault
+    Int32 消息类型_好友正在输入 IsConst : Public, Static, HasDefault
+    Int32 消息类型_好友今天首次发起会话 IsConst : Public, Static, HasDefault
+    Int32 消息类型_被好友抖动 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人申请加入群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人被邀请加入群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_我被邀请加入群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人被批准加入了群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人退出群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人被管理移除群 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某群被解散 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人成为管理 IsConst : Public, Static, HasDefault
+    Int32 消息类型_某人被取消管理 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群名片变动 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群名变动 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群公告变动 IsConst : Public, Static, HasDefault
+    Int32 消息类型_对象被禁言 IsConst : Public, Static, HasDefault
+    Int32 消息类型_对象被解除禁言 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群管开启全群禁言 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群管关闭全群禁言 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群管开启匿名聊天 IsConst : Public, Static, HasDefault
+    Int32 消息类型_群管关闭匿名聊天 IsConst : Public, Static, HasDefault
+    Int32 消息类型_框架加载完成 IsConst : Public, Static, HasDefault
+    Int32 消息类型_框架即将重启 IsConst : Public, Static, HasDefault
+    Int32 消息类型_添加了一个新的帐号 IsConst : Public, Static, HasDefault
+    Int32 消息类型_QQ登录完成 IsConst : Public, Static, HasDefault
+    Int32 消息类型_QQ被手动离线 IsConst : Public, Static, HasDefault
+    Int32 消息类型_QQ被强制离线 IsConst : Public, Static, HasDefault
+    Int32 消息类型_QQ长时间无响应或掉线 IsConst : Public, Static, HasDefault
+    Int32 消息类型_本插件载入 IsConst : Public, Static, HasDefault
+    Int32 消息类型_用户启用本插件 IsConst : Public, Static, HasDefault
+    Int32 消息类型_用户禁用本插件 IsConst : Public, Static, HasDefault
+    Int32 消息类型_插件被点击 IsConst : Public, Static, HasDefault
+    Int32 消息类型_收到财付通转账 IsConst : Public, Static, HasDefault
+    Int32 队列_未处理 IsConst : Public, Static, HasDefault
+    Int32 队列_继续执行 IsConst : Public, Static, HasDefault
+    Int32 队列_中断_阻塞 IsConst : Public, Static, HasDefault
+    Int32 状态_在线 IsConst : Public, Static, HasDefault
+    Int32 状态_离开 IsConst : Public, Static, HasDefault
+    Int32 状态_忙碌 IsConst : Public, Static, HasDefault
+    Int32 状态_Q我吧 IsConst : Public, Static, HasDefault
+    Int32 状态_勿扰 IsConst : Public, Static, HasDefault
+    Int32 状态_隐身 IsConst : Public, Static, HasDefault
+    SByte* ObjectMsg : Public, Static
+    Boolean 插件说明 IsConst : Public, Static, HasDefault
+Class MPQCore.ApiPorts: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
-    test(String): PrivateScope, Public, HideBySig
+    Api_GetGtk_Bkn(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetBkn32(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetLdw(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetRunPath(): PrivateScope, Public, Static, HideBySig
+    Api_GetOnlineQQlist(): PrivateScope, Public, Static, HideBySig
+    Api_GetQQlist(): PrivateScope, Public, Static, HideBySig
+    Api_GetSessionkey(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetClientkey(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetLongClientkey(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetCookies(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetPrefix(): PrivateScope, Public, Static, HideBySig
+    Api_Cache_NameCard(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_DBan(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Ban(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Shutup(SByte*, SByte*, SByte*, Int32): PrivateScope, Public, Static, HideBySig
+    Api_SetNotice(SByte*, SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetNotice(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetNameCard(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SetNameCard(SByte*, SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_QuitDG(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_DelFriend(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Kick(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_JoinGroup(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_QuitGroup(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_UploadPic(SByte*, Int32, SByte*, Byte*): PrivateScope, Public, Static, HideBySig
+    Api_GuidGetPicLink(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Reply(SByte*, Int32, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SendMsg(SByte*, Int32, Int32, SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Send(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_OutPut(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_IsEnable(): PrivateScope, Public, Static, HideBySig
+    Api_Login(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Logout(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Tea加密(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_Tea解密(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetNick(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetQQLevel(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GNGetGid(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GidGetGN(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetVersion(): PrivateScope, Public, Static, HideBySig
+    Api_GetVersionName(): PrivateScope, Public, Static, HideBySig
+    Api_GetTimeStamp(): PrivateScope, Public, Static, HideBySig
+    Api_GetLog(): PrivateScope, Public, Static, HideBySig
+    Api_IfBlock(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetAdminList(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_AddTaotao(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetSign(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SetSign(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetGroupListA(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetGroupListB(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetGroupMemberA(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetGroupMemberB(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetFriendList(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetQQAge(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetAge(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetPersonalProfile(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetEmail(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetGender(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SendTyping(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SendShake(SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetRadomOnlineQQ(): PrivateScope, Public, Static, HideBySig
+    Api_AddQQ(SByte*, SByte*, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    Api_SetOLStatus(SByte*, Int32, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetMC(): PrivateScope, Public, Static, HideBySig
+    Api_GroupInvitation(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_CreateDG(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_KickDG(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_DGInvitation(SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_GetDGList(SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SendMusic(SByte*, Int32, SByte*, SByte*, SByte*, SByte*, SByte*, SByte*, SByte*, SByte*, SByte*, SByte*): PrivateScope, Public, Static, HideBySig
+    Api_SendObjectMsg(SByte*, Int32, SByte*, SByte*, SByte*, Int32): PrivateScope, Public, Static, HideBySig
+    Api_IsFriend(): PrivateScope, Public, Static, HideBySig
+Class MPQCore.SConvert: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ToSByte(String): PrivateScope, Public, Static, HideBySig
+    GetLength(String): PrivateScope, Public, Static, HideBySig
+Class MPQCore.Backer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SByte*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Write(String): PrivateScope, Public, HideBySig
+Interface MPQCore.IPorts: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Methods:
+    about(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    init(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    info(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    end(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EventFun(String, Int32, Int32, String, String, String, String, String, Backer): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Message(String, Int32, String, String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
