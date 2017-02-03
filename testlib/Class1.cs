@@ -7,7 +7,7 @@ using MPQCore;
 using System.Windows.Forms;
 namespace testlib
 {
-    public class Class1:IPorts
+    public class Class1 : IPorts
     {
         void IPorts.about()
         {
@@ -24,12 +24,12 @@ namespace testlib
 
         int IPorts.EventFun(string qq, int msgtype, int msgctype, string msgsource, string dop, string bep, string msg, string rawmsg, Backer bker)
         {
-            if(msgtype>Consts.消息类型_好友&&msgtype<Consts.消息类型_讨论组临时会话)
+            if (msgtype > Consts.消息类型_好友 && msgtype < Consts.消息类型_讨论组临时会话)
             {
                 unsafe
                 {
-                    string back=null;
-                    switch(msg)
+                    string back = null;
+                    switch (msg)
                     {
                         case ".net测试":
                             back = "测试返回文本！";
@@ -42,7 +42,7 @@ namespace testlib
 
                     }
                     ApiPorts.Api_SendMsg(SConvert.ToSByte(qq), msgtype, 0,
-    SConvert.ToSByte(msgsource), SConvert.ToSByte(dop), SConvert.ToSByte("测试反馈："+back));
+    SConvert.ToSByte(msgsource), SConvert.ToSByte(dop), SConvert.ToSByte("测试反馈：" + back));
                 }
             }
             return 1;
@@ -73,7 +73,8 @@ namespace testlib
 
         void test()
         {
-            
+
         }
+        //}
     }
 }

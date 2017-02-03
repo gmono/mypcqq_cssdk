@@ -82,17 +82,21 @@ namespace MPQCore
 					break;//只取第一个
 				}
 			}
+			if (ret == nullptr) Api_OutPut("失败原因：没有获取到IPorts接口类");
 			return ret;
 		}
-		catch (Exception^ e)
+		catch (ReflectionTypeLoadException^ e)
 		{
-			Api_OutPut(SConvert::ToSByte(e->Message));
 			auto c = (ReflectionTypeLoadException^)e;
 			for each(auto a in c->LoaderExceptions)
 			{
 				Api_OutPut(SConvert::ToSByte(a->Message));
 			}
 			return nullptr;
+		}
+		catch (Exception^ e)
+		{
+			Api_OutPut(SConvert::ToSByte(e->Message));
 		}
 	}
 }
